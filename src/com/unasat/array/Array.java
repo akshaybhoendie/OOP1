@@ -2,6 +2,7 @@ package com.unasat.array;
 
 public class Array {
 
+    String naam = "Akshay";
     static String[] namen = new String[] {"Cedric", "Amtul", "Jane"};
     static String[] lesdagen = new String[] {"MAANDAG",
                                             "DINSDAG",
