@@ -1,0 +1,16 @@
+
+OPDRACHT
+
+1. Maak 2 instance Varibales, 1 array van Weekdagen, maandag t/m vrijdag
+								van datatype String
+								1 array van cijfers 1 t/m 10 van
+								datatype int
+
+2. Maak een Main class met de entry method
+
+3. Maak 2 method : 1. loop over de weekdagen. Wanneer
+					het woensdag of vrijdag is moet er in de
+					console gelogged worden "Er is les"
+					maak gebruik van een Switch statement
+				2. loop over de cijfers en log de tafel
+				   van de meegestuurde parameter in de console.
