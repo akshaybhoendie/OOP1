@@ -13,7 +13,7 @@ public class WerknemerRepository {
     public static final String generatedColumns[] = { "id" };
     private final String insertDeelnemerQuery = "insert into werknemer (naam,voornaam,geboortedatum) values (?,?,?)";
 
-    public WerknemerRepository() throws SQLException {
+    public WerknemerRepository() {
         this.connection = DBConfiguration.connectToDB();
     }
 

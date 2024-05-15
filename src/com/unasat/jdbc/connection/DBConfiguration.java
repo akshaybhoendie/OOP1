@@ -18,11 +18,7 @@ public class DBConfiguration {
             System.out.println("Connection is Stable and Active: " + connection.getClientInfo());
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-        }/*finally {
-            if(connection != null){
-                connection.close();
-            }
-        }*/
+        }
 
         return connection;
     }
