@@ -11,14 +11,14 @@ import java.sql.SQLException;
 public class WerknemerRepository {
     private final Connection connection;
     public static final String generatedColumns[] = { "id" };
-    private final String insertDeelnemerQuery = "insert into werknemer (naam,voornaam,geboortedatum) values (?,?,?)";
+    private final String insertWerknemerQuery = "insert into werknemer (naam,voornaam,geboortedatum) values (?,?,?)";
 
     public WerknemerRepository() {
         this.connection = DBConfiguration.connectToDB();
     }
 
     public int insertWerknemer(Werknemer werknemer) throws SQLException {
-        PreparedStatement insertWerknemerStatement = connection.prepareStatement(insertDeelnemerQuery, generatedColumns);
+        PreparedStatement insertWerknemerStatement = connection.prepareStatement(insertWerknemerQuery, generatedColumns);
 
         insertWerknemerStatement.setString(1, werknemer.getNaam());
         insertWerknemerStatement.setString(2, werknemer.getVoornaam());

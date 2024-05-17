@@ -8,9 +8,9 @@ import java.sql.SQLException;
 public class Main {
 
     public static void main(String[] args) throws SQLException {
-        Werknemer cedric = new Werknemer("cedric", "Dorder", "12-12-1998");
+        Werknemer danietscha = new Werknemer("danietscha", "van der broek", "12-12-1998");
 
         WerknemerRepository werknemerRepository = new WerknemerRepository();
-        werknemerRepository.insertWerknemer(cedric);
+        werknemerRepository.insertWerknemer(danietscha);
     }
 }

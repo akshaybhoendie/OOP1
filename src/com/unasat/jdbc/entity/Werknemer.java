@@ -7,13 +7,6 @@ public class Werknemer {
     private String voornaam;
     private String geboorteDatum;
 
-    public Werknemer(int id, String naam, String voornaam, String geboorteDatum) {
-        this.id = id;
-        this.naam = naam;
-        this.voornaam = voornaam;
-        this.geboorteDatum = geboorteDatum;
-    }
-
     public Werknemer(String naam, String voornaam, String geboorteDatum) {
         this.naam = naam;
         this.voornaam = voornaam;
