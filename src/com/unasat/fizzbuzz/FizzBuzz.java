@@ -13,7 +13,7 @@ public class FizzBuzz {
 
         //Method overload, validate FizzBuzz from 0 to 100
 
-        System.out.println(fizzBuzz());
+        fizzBuzz();
     }
 
     static String fizzBuzz(Integer i) {
@@ -30,6 +30,7 @@ public class FizzBuzz {
         return result;
     }
     static String fizzBuzz() {
+
         for (int i=0; i<100; i++) {
             String result = "";
             if (i % 3 == 0) {
@@ -42,10 +43,10 @@ public class FizzBuzz {
                 result = String.valueOf(i);
             }
 
-            return result;
+            System.out.println(result + "\n");
         }
 
-        return null;
+        return "Done";
     }
 
 }
